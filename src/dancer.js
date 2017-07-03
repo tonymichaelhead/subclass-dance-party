@@ -24,3 +24,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 
   
 };
+
+makeDancer.prototype.lineUp = function(x, y) {
+  this.setPosition(x, y);
+};
