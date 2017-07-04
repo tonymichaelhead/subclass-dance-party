@@ -28,3 +28,8 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 makeDancer.prototype.lineUp = function(x, y) {
   this.setPosition(x, y);
 };
+
+makeDancer.prototype.doTrick = function() {
+  this.$node.animate({ 'zoom': 1.5 }, 'slow');
+  this.$node.animate({ 'zoom':  -1.5}, 'slow');
+};
